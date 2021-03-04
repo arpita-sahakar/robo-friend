@@ -4,7 +4,7 @@ import Card from "./Card";
 function CardList(props) {
   return (
     <div>
-      {props.robots.map((robot, i) => (
+      {props.filteredRobots.map((robot, i) => (
         <Card id={robot.id} name={robot.name} email={robot.email} key={i} />
       ))}
       {/* <Card id={props.robots[0].id} name={props.robots[0].name} email={props.robots[0].email} />
